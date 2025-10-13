@@ -1,5 +1,6 @@
 package Aula.Spring.Security.model;
 
+import Aula.Spring.Security.enums.PedidoStatus;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,6 +12,8 @@ public class PedidoModel {
     private Long id;
     private String cliente;
     private String preco;
+
+    private PedidoStatus status;
 
     public PedidoModel() {
 
